@@ -1,0 +1,59 @@
+/* src/App.css */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.note-form input,
+.note-form textarea {
+  margin: 5px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.note-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+
+.note {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.note img {
+  max-width: 100%;
+  height: auto;
+}
+
+.note button {
+  margin-top: 10px;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .note-list {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+}
+/* src/App.css */
+.App {
+  display: flex;
+}
+
+.main-content {
+  margin-left: 200px; /* Adjust based on the sidebar width */
+  padding: 20px;
+  width: 100%;
+}
